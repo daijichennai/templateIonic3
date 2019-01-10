@@ -1,0 +1,23 @@
+<ion-header>
+    <ion-navbar color="primary">
+        <button ion-button menuToggle>
+    <ion-icon name="menu"></ion-icon>
+  </button>
+        <ion-title>
+            <strong>Dashboard</strong>
+        </ion-title>
+    </ion-navbar>
+</ion-header>
+
+
+<ion-content no-padding>
+    <ion-card>
+        <ion-slides loop="true" autoplay="3000" pager>
+            <ion-slide *ngFor="let number of [1,2,3,4,5,6]">
+                <img src="./assets/img/{{number}}.jpg" />
+                <div class="card-title">Ionic 3</div>
+                <div class="card-subtitle">Template</div>
+            </ion-slide>
+        </ion-slides>
+    </ion-card>
+</ion-content>
